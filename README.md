@@ -1,1 +1,0 @@
-# TTL-elo-bot
