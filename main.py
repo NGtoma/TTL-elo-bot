@@ -677,7 +677,7 @@ async def report(interaction: discord.Interaction, resultat: str):
     membre="Le joueur dont tu veux modifier l'Elo",
     nouvel_elo="La nouvelle valeur d'Elo à attribuer"
 )
-@app_commands.checks.has_any_role(ADMIN_ROLE_ID)
+@app_commands.checks.has_any_role("〃Developper")
 async def setelo(interaction: discord.Interaction, membre: discord.Member, nouvel_elo: int):
     player = get_player(membre.id)
     if not player:
